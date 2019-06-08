@@ -60,7 +60,7 @@
                 </tr>
                 <tr>
                     <td>onDown</td>
-                    <td>Sets an onUp event handler to be fired when the value is decreased</td>
+                    <td>Sets an onDown event handler to be fired when the value is decreased</td>
                     <td>Function</td>
                     <td>??</td>
                     <td>Not Implemented</td>
