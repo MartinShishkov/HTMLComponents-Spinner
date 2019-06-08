@@ -95,3 +95,15 @@
                 </tr>
             </tbody>
         </table>
+
+<h1>Usage</h1>
+
+```html
+<msh-spinner initialValue="21"></msh-spinner>
+
+<msh-spinner min="4" max="10" initialValue="6"></msh-spinner>
+
+<msh-spinner upBtnText="increase" downBtnText="decrease"></msh-spinner>
+
+<msh-spinner initialValue="5" step="0.3"></msh-spinner>
+```
