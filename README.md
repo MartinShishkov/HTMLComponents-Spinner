@@ -83,14 +83,14 @@
                     <td>upBtnText</td>
                     <td>Text content of the increase button.</td>
                     <td>string</td>
-                    <td>+</td>
+                    <td>'+'</td>
                     <td>Yes</td>
                 </tr>
                 <tr>
                     <td>downBtnText</td>
                     <td>Text content of the decrease button.</td>
                     <td>string</td>
-                    <td>-</td>
+                    <td>'-'</td>
                     <td>Yes</td>
                 </tr>
             </tbody>
