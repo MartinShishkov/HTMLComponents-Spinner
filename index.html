@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>HTML Spinner</title>
+        <script src="src/MshSpinner.js"></script>
+    </head>
+    <body>
+        <h3>Demo page for &lt;msh-spinner&gt; element</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Optional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>initialValue</td>
+                    <td>The initial value of the component.</td>
+                    <td>Number</td>
+                    <td>0</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td>
+                        Sets the lower bound of the interval of possible values. 
+                        If `min` is greater than `initialValue` or the default `initialValue`, the initial value is set to `min`.
+                    </td>
+                    <td>Number</td>
+                    <td>Negative Infinity</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>max</td>
+                    <td>
+                        Sets the upper bound of the interval of possible values. 
+                        If `max` is less than `initialValue` or the default `initialValue`, the initial value is set to `max`.
+                    </td>
+                    <td>Number</td>
+                    <td>Positive Infinity</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>step</td>
+                    <td>Sets the step with which to increase/decrease the value on change</td>
+                    <td>Number</td>
+                    <td>1</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>onChange</td>
+                    <td>Sets an onChange event handler to be fired when the value is changed</td>
+                    <td>Function</td>
+                    <td>??</td>
+                    <td>Not Implemented</td>
+                </tr>
+                <tr>
+                    <td>onUp</td>
+                    <td>Sets an onUp event handler to be fired when the value is increased</td>
+                    <td>Function</td>
+                    <td>??</td>
+                    <td>Not Implemented</td>
+                </tr>
+                <tr>
+                    <td>onDown</td>
+                    <td>Sets an onUp event handler to be fired when the value is decreased</td>
+                    <td>Function</td>
+                    <td>??</td>
+                    <td>Not Implemented</td>
+                </tr>
+                <tr>
+                    <td>renderer</td>
+                    <td>Sets a function that returns a string to be represented in the UI. Gets passed the current value as an argument.</td>
+                    <td>Function</td>
+                    <td>??</td>
+                    <td>Not Implemented</td>
+                </tr>
+                <tr>
+                    <td>style</td>
+                    <td>An object with CSS properties that's used to style the component.</td>
+                    <td>object</td>
+                    <td>??</td>
+                    <td>Not Implemented</td>
+                </tr>
+                <tr>
+                    <td>upBtnText</td>
+                    <td>Text content of the increase button.</td>
+                    <td>string</td>
+                    <td>+</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>downBtnText</td>
+                    <td>Text content of the decrease button.</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>With initial value</p>
+        <msh-spinner initialValue="21"></msh-spinner>
+
+        <p>With initial value and 'min' boundary</p>
+        <msh-spinner min="17" initialValue="21"></msh-spinner>
+
+        <p>With initial value and 'max' boundary</p>
+        <msh-spinner max="5" initialValue="2"></msh-spinner>
+
+        <p>With initial value, 'min' and 'max' boundaries</p>
+        <msh-spinner max="5" min="-5" initialValue="2" upBtnText="increase" downBtnText="decrease"></msh-spinner>
+
+        <p>With customized button texts</p>
+        <msh-spinner max="5" min="-5" initialValue="2" upBtnText="👍" downBtnText="👇"></msh-spinner>
+
+        <p>With customized button texts and 0.02 step</p>
+        <msh-spinner max="0" min="-5" initialValue="2" step="0.02" upBtnText="👍" downBtnText="👇"></msh-spinner>
+
+        <msh-spinner max="5" min="10" step="0.02" upBtnText="👍" downBtnText="👇"></msh-spinner>
+    </body>
+</html>
